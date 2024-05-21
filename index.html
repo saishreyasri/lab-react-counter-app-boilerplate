@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Setup</title>
+</head>
+<body>
+    <div id="react-container"></div>
+ 
+<script type="text/babel">
+    class ReactContainer extends React.Component {
+        render() {
+            return (
+                <div>
+                    Hello! Welcome to Kalvium
+                    <div>This is babel</div>
+                </div>
+            );
+        }
+    }
+
+    const container = document.getElementById('react-container');
+    ReactDOM.render(<ReactContainer />, container);
+</script>
+
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+   
+    <script src="./app.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+</body>
+</html>
